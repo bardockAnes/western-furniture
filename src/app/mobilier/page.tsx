@@ -1,7 +1,12 @@
 
+export default function HomePage(){
 
-export default function mobilier() {
-    return (
-        <text>mobilier</text>
-    )
-}
+
+  return (
+    <div>
+      <h1></h1>
+      <p></p>
+    </div>
+  );
+};
+
