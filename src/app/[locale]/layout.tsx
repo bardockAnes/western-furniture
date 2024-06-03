@@ -1,40 +1,48 @@
-import type { Metadata } from "next";
-import "@/styles/globals.css";
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {Inter} from 'next/font/google';
+import {NextIntlClientProvider} from 'next-intl';
+import {
+  getMessages,
+  getTranslations,
+  unstable_setRequestLocale
+} from 'next-intl/server';
+import {ReactNode} from 'react';
+import Navigation from '@/components/Navigation';
+import {locales} from '@/config';
 
+const inter = Inter({subsets: ['latin']});
 
-export const metadata: Metadata = {
-  title: "Anes",
-  description: "next app by aness",
+type Props = {
+  children: ReactNode;
+  params: {locale: string};
 };
 
-// Can be imported from a shared config
-const locales = ['en', 'fr', 'ar'];
-
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return locales.map((locale) => ({locale}));
+}
 
-  type Props = {
-    params: {locale: string};
+export async function generateMetadata({
+  params: {locale}
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
+
+  return {
+    title: t('title')
   };
 }
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+  params: {locale}
+}: Props) {
+  // Enable static rendering
+  unstable_setRequestLocale(locale);
+
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
-  unstable_setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html className="h-full" lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
