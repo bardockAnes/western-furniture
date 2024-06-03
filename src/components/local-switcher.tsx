@@ -24,7 +24,7 @@ function LocalSwitcher() {
                 <select defaultValue={ActiveLocale}  style={{ backgroundColor: "red" }} onChange={onSelectChange}>
                     <option value="en">english</option>
                     <option value="fr">frnsh</option>
-                    <option value="ar">frnsh</option>
+                    <option value="ar">العربية</option>
                 </select>
             </p>
         </label>
