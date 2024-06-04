@@ -12,7 +12,7 @@
   },
   "LocaleSwitcher": {
     "label": "Changer de langue",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} fr {🇫🇷 Français} ar {العربية} other {Inconnu}}"
+    "locale": "{locale, select, en { En} fr {Fr} ar {Ar} other {Inconnu}}"
   },
   "Manifest": {
     "name": "exemple next-intl"
@@ -20,7 +20,7 @@
   "Navigation": {
     "home": "Accueil",
     "pathnames": "Noms de chemin",
-    "me":"moi"
+    "me": "moi"
   },
   "NotFoundPage": {
     "description": "Veuillez vérifier l'adresse dans la barre d'adresse du navigateur ou utilisez la navigation pour aller à une page connue.",
@@ -43,5 +43,12 @@
   "PathnamesPage": {
     "description": "<p>Les noms de chemin sont également internationalisés.</p><p>Si vous utilisez la langue par défaut, l'anglais, vous verrez <code>/en/pathnames</code> dans la barre d'adresse du navigateur sur cette page.</p><p>Si vous changez la langue en allemand, l'URL est localisée en conséquence (<code>/de/pfadnamen</code>).</p>",
     "title": "Noms de chemin"
+  },
+  "SpaceLandText":
+  {
+    "sltt":"titre",
+    "sltd":"detail",
+    "sltbone":"butonun",
+    "sltbtwo":"butondeu"
   }
 }

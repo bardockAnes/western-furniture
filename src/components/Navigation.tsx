@@ -8,8 +8,11 @@ export default function Navigation() {
 
   return (
     <div className="navigation">
+      <div className='logo'>
+        <text className='logotext'>west furniter</text>
+      </div>
       <nav>
-        <div className="links">
+        <div className="links" >
           <NavigationLink href="/">{t('home')}</NavigationLink>
           <NavigationLink href="/pathnames">{t('pathnames')}</NavigationLink>
           <NavigationLink href="/me">{t('me')}</NavigationLink>

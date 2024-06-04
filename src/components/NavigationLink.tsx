@@ -4,6 +4,7 @@ import {useSelectedLayoutSegment} from 'next/navigation';
 import {ComponentProps} from 'react';
 import type {AppPathnames} from '@/config';
 import {Link} from '@/navigation';
+import './styles.css'
 
 export default function NavigationLink<Pathname extends AppPathnames>({
   href,
@@ -14,7 +15,7 @@ export default function NavigationLink<Pathname extends AppPathnames>({
   const isActive = pathname === href;
 
   return (
-    <Link
+    <Link className='navlinks'
       aria-current={isActive ? 'page' : undefined}
       href={href}
       {...rest}

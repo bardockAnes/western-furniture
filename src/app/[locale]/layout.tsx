@@ -6,8 +6,9 @@ import {
   unstable_setRequestLocale
 } from 'next-intl/server';
 import {ReactNode} from 'react';
-import Navigation from '@/components/Navigation';
 import {locales} from '@/config';
+import '@/styles/styles.css'
+import Navigation from '@/components/Navigation';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -41,10 +42,14 @@ export default async function LocaleLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
+  const dir = locale === 'ar' ? 'rtl' : 'ltr';
+
+
   return (
-    <html className="h-full" lang={locale}>
+    <html lang={locale} dir={dir}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Navigation/>
           {children}
         </NextIntlClientProvider>
       </body>

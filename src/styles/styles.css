@@ -1,0 +1,18 @@
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    height: 100vh;
+}
+
+/* Space land image */
+
+.spi{
+  /* space land image */
+  height: auto;
+  width: auto;
+}
+
+.spii{
+    /* space land image image */
+    height: auto;
+}

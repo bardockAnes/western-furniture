@@ -45,7 +45,7 @@ export default function LocaleSwitcherSelect({
       >
         {children}
       </select>
-      <span className="locale-switcher-arrow">⌄</span>
+      {/* <span className="locale-switcher-arrow">⌄</span> */}
     </label>
   );
 }

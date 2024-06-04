@@ -1,6 +1,7 @@
 import {useLocale, useTranslations} from 'next-intl';
 import LocaleSwitcherSelect from './LocaleSwitcherSelect';
 import {locales} from '@/config';
+import './styles.css'
 
 export default function LocaleSwitcher() {
   const t = useTranslations('LocaleSwitcher');
@@ -9,7 +10,7 @@ export default function LocaleSwitcher() {
   return (
     <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
       {locales.map((cur) => (
-        <option key={cur} value={cur}>
+        <option className="selectoption" key={cur} value={cur}>
           {t('locale', {locale: cur})}
         </option>
       ))}
