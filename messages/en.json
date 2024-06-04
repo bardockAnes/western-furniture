@@ -19,7 +19,8 @@
   },
   "Navigation": {
     "home": "Home",
-    "pathnames": "Pathnames"
+    "pathnames": "Pathnames",
+    "me":"me"
   },
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",

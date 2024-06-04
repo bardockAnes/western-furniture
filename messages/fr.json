@@ -19,7 +19,8 @@
   },
   "Navigation": {
     "home": "Accueil",
-    "pathnames": "Noms de chemin"
+    "pathnames": "Noms de chemin",
+    "me":"moi"
   },
   "NotFoundPage": {
     "description": "Veuillez vérifier l'adresse dans la barre d'adresse du navigateur ou utilisez la navigation pour aller à une page connue.",
