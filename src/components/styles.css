@@ -112,7 +112,9 @@
 
 .logo {
   margin-left: 20px;
+  margin-right: 20px;
   align-items: center;
+
 }
 
 .logotext {
@@ -125,7 +127,8 @@
   display: flex;
   gap: 70px;
   padding: 7px;
-  margin-right: 10%;
+  margin-right: 50px;
+  margin-left: 50px;
 
 }
 
@@ -241,8 +244,6 @@ background-color: whitesmoke;
   height: 88vh;
   justify-content: space-around;
   align-items: center;
-
-  background-color: lightgreen;
 }
 /* space land text */
 
@@ -251,6 +252,7 @@ background-color: whitesmoke;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  width: 40%;
 }
 
 .sltt {
@@ -268,7 +270,7 @@ background-color: whitesmoke;
 }
 .sltb{
   /* space land text button */
-  background-color: whitesmoke;
+  background-color:coral;
   border-radius: 7px;
   border: 0;
   padding: 10px;

@@ -18,9 +18,13 @@
     "name": "next-intl example"
   },
   "Navigation": {
-    "home": "Home",
+    "kitchen": "Kitchen",
     "pathnames": "Pathnames",
-    "me":"me"
+    "me":"me",
+    "furniture":"Furniture",
+    "contact": "Contact Us",
+    "blog":"Blog",
+    "about":"About Us"
   },
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
@@ -50,5 +54,9 @@
     "sltd":"details",
     "sltbone":"butone",
     "sltbtwo":"butontwo"
+  },
+  "kitchen_designs": {
+    "title": "Simple, Stylish, and Affordable Kitchens Tailored to Your Taste",
+    "details": "Explore our range of kitchens designed to meet your style and budget needs. We offer simple, elegant, and budget-friendly designs that perfectly match your personal aesthetic. Transform your kitchen space into a functional and trendy place without breaking the bank."
   }
 }

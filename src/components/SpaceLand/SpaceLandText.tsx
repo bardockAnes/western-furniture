@@ -3,12 +3,12 @@ import '../styles.css'
 import { useTranslations } from 'next-intl';
 
 function SpaceLandText() {
-  const t = useTranslations('SpaceLandText');
+  const t = useTranslations('kitchen_designs');
   
   return (
     <div className='spacelandtext'>
-      <div className='sltt'>{t('sltt')}</div>
-      <div className='sltd'>{t('sltd')}</div>
+      <div className='sltt'>{t('title')}</div>
+      <div className='sltd'>{t('details')}</div>
       <div className='sltbs'>
         <button className='sltb'>{t('sltbone')}</button>
         <button className='sltb'>{t('sltbtwo')}</button>
