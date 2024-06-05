@@ -10,8 +10,8 @@ function SpaceLandText() {
       <div className='sltt'>{t('title')}</div>
       <div className='sltd'>{t('details')}</div>
       <div className='sltbs'>
-        <button className='sltb'>{t('sltbone')}</button>
-        <button className='sltb'>{t('sltbtwo')}</button>
+        <button className='sltb'>{t('buttonone')}</button>
+        <button className='sltb'>{t('buttontwo')}</button>
       </div>
     </div>
   )
