@@ -1,3 +1,36 @@
+@font-face {
+  font-family: PFD;
+  src: url('../../public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: OS;
+  src: url('../../public/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+}
+@font-face {
+  font-family: aum;
+  src: url('../../public/fonts/Amulya_Complete/Fonts/TTF/Amulya-Variable.ttf');
+}
+@font-face {
+  font-family: lora;
+  src: url('../../public/fonts/EB_Garamond,Lora/Lora/Lora-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: gara ;
+  src: url('../../public/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: futura;
+  src: url('../../public/fonts/futura/futur.ttf');
+}
+@font-face {
+  font-family: mont;
+  src: url('../../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: syo;
+  src: url('../../public/fonts/Synonym_Complete/Fonts/TTF/Synonym-Variable.ttf');
+}
+
 body {
     background-color: whitesmoke;
     margin: 0px;

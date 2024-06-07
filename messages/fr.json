@@ -24,7 +24,8 @@
     "furniture": "Meubles",
     "contact": "Contactez Nous",
     "blog": "Blog",
-    "about": "à Propos"
+    "about": "à Propos",
+    "logo": "Ouest Mobilier"
   },
   "NotFoundPage": {
     "description": "Veuillez vérifier l'adresse dans la barre d'adresse du navigateur ou utilisez la navigation pour aller à une page connue.",
@@ -55,8 +56,8 @@
     "sltbtwo": "butondeu"
   },
   "kitchen_designs": {
-    "title": "Des cuisines simples, stylées et abordables pour tous les goûts",
-    "details": "Découvrez nos cuisines conçues pour répondre à vos besoins de style et de budget. Nous offrons des designs simples, élégants et abordables qui s'adaptent à votre esthétique personnelle. Transformez votre espace de cuisine en un lieu fonctionnel et tendance sans vous ruiner.",
+    "title": "Des cuisines simples, stylées et abordables",
+    "details": "Transformez votre maison avec nos cuisines magnifiques alliant style et accessibilité. Nos designs élégants sont adaptés à votre goût et à votre budget, garantissant une cuisine à la fois belle et fonctionnelle. Découvrez la cuisine parfaite pour votre maison dès aujourd'hui !",
     "buttonone": "Contactez Nous",
     "buttontwo": "Cuisines"
   }

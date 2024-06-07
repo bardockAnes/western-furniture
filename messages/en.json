@@ -24,7 +24,9 @@
     "furniture":"Furniture",
     "contact": "Contact Us",
     "blog":"Blog",
-    "about":"About Us"
+    "about":"About Us",
+    "logo":"West Furniture"
+    
   },
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
@@ -56,9 +58,9 @@
     "sltbtwo":"butontwo"
   },
   "kitchen_designs": {
-    "title": "Simple, Stylish, and Affordable Kitchens Tailored to Your Taste",
-    "details": "Explore our range of kitchens designed to meet your style and budget needs. We offer simple, elegant, and budget-friendly designs that perfectly match your personal aesthetic. Transform your kitchen space into a functional and trendy place without breaking the bank.",
-    "buttonone": "Contact us",
-    "buttontwo": "kitchens"
+    "title": "Simple, Stylish, and Affordable Kitchens",
+    "details": "Transform your home with our stunning kitchens that combine style and affordability. Our elegant designs are tailored to your taste and budget, ensuring your kitchen is both beautiful and functional. Discover the perfect kitchen for your home today !",
+    "buttonone": "Contact Us",
+    "buttontwo": "Kitchens"
   }
 }

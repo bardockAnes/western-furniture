@@ -9,7 +9,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <div className='logo'>
-        <text className='logotext'>west furniter</text>
+        <text className='logotext'>{t('logo')}</text>
       </div>
       <nav>
         <div className="links" >
@@ -19,8 +19,10 @@ export default function Navigation() {
           <NavigationLink href="/me">{t('blog')}</NavigationLink>
           <NavigationLink href="/me">{t('about')}</NavigationLink>
         </div>
-        <LocaleSwitcher />
       </nav>
+      <div className='lang'>
+        <LocaleSwitcher />
+      </div>
     </div>
   );
 }

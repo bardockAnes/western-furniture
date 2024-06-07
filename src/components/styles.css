@@ -106,29 +106,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
+  font-family: 'gara';
 }
 
 .logo {
   margin-left: 20px;
   margin-right: 20px;
   align-items: center;
-
 }
 
 .logotext {
   font-size: xx-large;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 700;
+  font-family:'gara';
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .navigation nav {
   display: flex;
-  gap: 70px;
-  padding: 7px;
-  margin-right: 50px;
-  margin-left: 50px;
+
+
 
 }
 
@@ -137,6 +134,15 @@
   gap: 35px;
   align-items: center;
   font-size: large;
+}
+
+.lang {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  width: 180px;
+  display: flex;
+  justify-content: center;
 }
 
 .navlinks {
@@ -167,13 +173,17 @@
 
 .locale-switcher-select {
   display: inline-flex;
-  color: black;
+  color: white;
+  border-radius: 8px;
   appearance: none;
-  background-color: transparent;
+  background-color: black;
   border:0;
   padding: 7px;
-  padding-left: 3px;
+  padding-left: 7px;
   cursor:pointer;
+  font-weight: 500;
+  font-family: 'gara';
+
 }
 
 
@@ -183,8 +193,11 @@
 }
 
 .selectoption {
-text-align: center;
-background-color: whitesmoke;
+background-color: black;
+font-family: 'gara';
+font-weight: 500;
+color: white;
+
 }
 
 .locale-switcher-arrow {
@@ -242,38 +255,62 @@ background-color: whitesmoke;
 .spaceland {
   display: flex;
   height: 88vh;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  
 }
 /* space land text */
 
 .spacelandtext {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  width: 40%;
+  justify-content: center;
+  gap: 16px;
+  width: 450px;
+  height: 400px;
 }
 
 .sltt {
   /* space land text tilte */
-  font-size: xx-large;
-  font-weight: bold;
+  font-size: 62px;
+  line-height: 68.2px;
+  letter-spacing: -0.1px;
+  width: 120%;
+font-weight: 600;
+  font-family: 'gara';
+  /* padding-left: 10px;
+  padding-right: 10px; */
 }
 .sltd {
   /* space land text details */
-  font-size: large;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 300;
+  font-family: 'lora';
 }
 .sltbs {
   display: flex;
   gap: 20px;
+  margin-top: 16px;
+  /* padding-left: 20px; */
 }
 .sltb{
   /* space land text button */
-  background-color:coral;
+  background-color:lightslategrey;
   border-radius: 7px;
   border: 0;
   padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 180px;
+  font-family: 'gara';
+  font-size: 18px;
+
+}
+.sltbtwo{
+  /* space land text button */
+  border-radius: 7px;
+  border: 1px solid lightslategrey;
+  padding: 10px;
+  width: 180px;
+  font-family: 'gara';
+  font-size: 18px;
 }
