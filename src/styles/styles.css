@@ -7,10 +7,6 @@
   src: url('../../public/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
 }
 @font-face {
-  font-family: aum;
-  src: url('../../public/fonts/Amulya_Complete/Fonts/TTF/Amulya-Variable.ttf');
-}
-@font-face {
   font-family: lora;
   src: url('../../public/fonts/EB_Garamond,Lora/Lora/Lora-VariableFont_wght.ttf');
 }
@@ -26,10 +22,7 @@
   font-family: mont;
   src: url('../../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
-@font-face {
-  font-family: syo;
-  src: url('../../public/fonts/Synonym_Complete/Fonts/TTF/Synonym-Variable.ttf');
-}
+
 
 body {
     background-color: whitesmoke;
