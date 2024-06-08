@@ -290,7 +290,7 @@ font-weight: 600;
 }
 .sltbs {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin-top: 16px;
   /* padding-left: 20px; */
 }
@@ -303,6 +303,10 @@ font-weight: 600;
   width: 180px;
   font-family: 'gara';
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ;
 
 }
 .sltbtwo{
@@ -314,3 +318,6 @@ font-weight: 600;
   font-family: 'gara';
   font-size: 18px;
 }
+
+
+

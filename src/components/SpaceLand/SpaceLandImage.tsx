@@ -13,7 +13,7 @@ function SpaceLandImage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 7000); // Change image every 7 seconds
+    }, 6000); // Change image every 7 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [images.length]);
