@@ -32,13 +32,24 @@ body {
 
 /* Space land image */
 
-.spi{
-  /* space land image */
-  height: auto;
-  width: auto;
+.spi {
+  position: relative;
+  width: 450px;
+  height: 400px;
 }
 
-.spii{
-    /* space land image image */
-    height: auto;
+.spi img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.spi img.active {
+  opacity: 1;
 }

@@ -9,6 +9,7 @@ import {ReactNode} from 'react';
 import {locales} from '@/config';
 import '@/styles/styles.css'
 import Navigation from '@/components/Navigation';
+import Transition from '@/components/Transition';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -50,7 +51,9 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           <Navigation/>
+
           {children}
+
         </NextIntlClientProvider>
       </body>
     </html>

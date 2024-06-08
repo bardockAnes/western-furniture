@@ -1,15 +1,36 @@
 'use client';
-import React from 'react'
-import  '../../../public/my.jpg'
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import ImageSrc from '../../../public/3.jpeg'
-
+import ImageSrc1 from '../../../public/3.jpeg';
+import ImageSrc2 from '../../../public/2.jpeg';
+import ImageSrc3 from '../../../public/5.jpg'; // Add more images as needed
 function SpaceLandImage() {
+  const images = [ImageSrc1, ImageSrc2, ImageSrc3]; // Array of image sources
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 7000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [images.length]);
+
   return (
     <div className='spi'>
-      <Image src={ImageSrc} style={{borderRadius:25}} alt='imagesrc' width={450} height={400} />
+      {images.map((image, index) => (
+        <Image
+          key={index}
+          src={image}
+          alt={`image-${index}`}
+          width={450}
+          height={400}
+          className={index === currentIndex ? 'active' : ''}
+          style={{ position: 'absolute', top: 0, left: 0, borderRadius: 25, transition: 'opacity 1s ease-in-out' }}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default SpaceLandImage
+export default SpaceLandImage;
