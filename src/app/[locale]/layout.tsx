@@ -9,7 +9,6 @@ import {ReactNode} from 'react';
 import {locales} from '@/config';
 import '@/styles/styles.css'
 import Navigation from '@/components/Navigation';
-import Transition from '@/components/Transition';
 
 const inter = Inter({subsets: ['latin']});
 
