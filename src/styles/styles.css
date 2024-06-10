@@ -25,9 +25,10 @@
 
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
     margin: 0px;
     height: 100vh;
+    background: linear-gradient(to left, white, rgba(179, 197, 245, 0.15));
 }
 
 /* Space land image */
