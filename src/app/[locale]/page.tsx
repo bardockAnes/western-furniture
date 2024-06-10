@@ -1,3 +1,4 @@
+import Services from '@/components/Services';
 import SpaceLand from '@/components/SpaceLand';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
@@ -14,6 +15,9 @@ export default function IndexPage({ params: { locale } }: Props) {
   const t = useTranslations('IndexPage');
 
   return (
-    <SpaceLand />
+    <>
+      <SpaceLand />
+      <Services />
+    </>
   );
 }

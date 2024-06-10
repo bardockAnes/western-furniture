@@ -59,6 +59,21 @@
     "title": "Des cuisines simples, stylées et abordables",
     "details": "Transformez votre maison avec nos cuisines magnifiques alliant style et accessibilité. Nos designs élégants sont adaptés à votre goût et à votre budget, garantissant une cuisine à la fois belle et fonctionnelle. Découvrez la cuisine parfaite pour votre maison dès aujourd'hui !",
     "buttonone": "Contactez Nous",
-    "buttontwo": "Cuisines"
+    "buttontwo": "Services"
+  },
+  "services": {
+    "services": "Services",
+    "customKitchenOptions": {
+      "title": "Options de Cuisine Personnalisées",
+      "details": "Découvrez une large gamme de choix pour personnaliser votre cuisine selon vos préférences. Des styles de tiroirs différents aux designs de placards uniques, trouvez la correspondance parfaite pour vos besoins en cuisine."
+    },
+    "tailoredCabinetryCraftsmanship": {
+      "title": "Menuiserie sur Mesure",
+      "details": "Améliorez votre cuisine avec nos armoires sur mesure, fabriquées avec soin et attention aux détails. Que vous ayez besoin de pièces indépendantes ou de solutions intégrées, nos artisans experts créent des armoires qui s'adaptent parfaitement à votre espace et ajoutent une touche d'élégance à votre cuisine."
+    },
+    "completeKitchenMakeover": {
+      "title": "Rénovation Complète de Cuisine",
+      "details": "Obtenez la cuisine de vos rêves avec notre forfait de conception et de construction complet. De A à Z, nous travaillons avec vous pour créer une cuisine qui correspond à votre style de vie et dépasse vos attentes. Profitez d'un mélange parfait de style et de fonctionnalité avec nos armoires soigneusement conçues et nos finitions de haute qualité."
+    }
   }
 }

@@ -4,12 +4,9 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  background-color: #1e293b;
-  /* slate-850 */
-  padding-top: 9rem;
-  /* py-36 */
-  padding-bottom: 9rem;
-  /* py-36 */
+  background-color: #1e293b; /* slate-850 */
+  padding-top: 9rem; /* py-36 */
+  padding-bottom: 9rem; /* py-36 */
 }
 
 .page-layout .background {
@@ -21,58 +18,44 @@
 .page-layout .background .gradient {
   position: absolute;
   left: 0;
-  top: 0.25rem;
-  /* top-1 */
+  top: 0.25rem; /* top-1 */
   height: 20500px;
   width: 20500px;
   transform: translateX(-47.5%);
-  border-radius: 9999px;
-  /* rounded-full */
-  background: linear-gradient(to bottom, #0f172a, #22d3ee);
-  /* from-slate-900 via-cyan-500 */
+  border-radius: 9999px; /* rounded-full */
+  background: linear-gradient(to bottom, #0f172a, #22d3ee); /* from-slate-900 via-cyan-500 */
 }
 
 .page-layout .content {
   position: relative;
   flex-grow: 1;
   flex-direction: column;
-  padding-left: 1rem;
-  /* px-4 */
-  padding-right: 1rem;
-  /* px-4 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
 }
 
 .page-layout h1 {
-  font-size: 1.875rem;
-  /* text-3xl */
-  font-weight: 600;
-  /* font-semibold */
-  line-height: 1.25;
-  /* leading-tight */
-  letter-spacing: -0.025em;
-  /* tracking-tight */
-  color: #ffffff;
-  /* text-white */
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  line-height: 1.25; /* leading-tight */
+  letter-spacing: -0.025em; /* tracking-tight */
+  color: #ffffff; /* text-white */
 }
 
 @media (min-width: 768px) {
   .page-layout h1 {
-    font-size: 3rem;
-    /* md:text-5xl */
+    font-size: 3rem; /* md:text-5xl */
   }
 }
 
 .page-layout .children {
-  margin-top: 1.5rem;
-  /* mt-6 */
-  color: #9ca3af;
-  /* text-gray-400 */
+  margin-top: 1.5rem; /* mt-6 */
+  color: #9ca3af; /* text-gray-400 */
 }
 
 @media (min-width: 768px) {
   .page-layout .children {
-    font-size: 1.125rem;
-    /* md:text-lg */
+    font-size: 1.125rem; /* md:text-lg */
   }
 }
 
@@ -80,33 +63,30 @@
   margin-top: auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  /* gap-4 */
-  padding-top: 5rem;
-  /* pt-20 */
+  gap: 1rem; /* gap-4 */
+  padding-top: 5rem; /* pt-20 */
 }
 
 @media (min-width: 768px) {
   .page-layout .links {
-    grid-template-columns: repeat(2, 1fr);
-    /* md:grid-cols-2 */
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
   }
 }
 
 @media (min-width: 1024px) {
   .page-layout .links {
-    gap: 3rem;
-    /* lg:gap-12 */
+    gap: 3rem; /* lg:gap-12 */
   }
 }
 
 /* Styles for Navigation component */
 .navigation {
-  height: 12vh;
+  min-height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'gara';
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -117,16 +97,13 @@
 
 .logotext {
   font-size: xx-large;
-  font-family:'gara';
+  font-family: 'gara';
   font-weight: 600;
   letter-spacing: -0.5px;
 }
 
 .navigation nav {
   display: flex;
-
-
-
 }
 
 .navigation nav .links {
@@ -147,7 +124,7 @@
 
 .navlinks {
   text-decoration: none;
-  color: #000;;
+  color: #000;
 }
 
 /* Styles for LocaleSwitcherSelect component */
@@ -157,8 +134,6 @@
   align-items: center;
   text-align: center;
 }
-
-
 
 .locale-switcher-label .sr-only {
   position: absolute;
@@ -177,15 +152,13 @@
   border-radius: 8px;
   appearance: none;
   background-color: black;
-  border:0;
+  border: 0;
   padding: 7px;
   padding-left: 7px;
-  cursor:pointer;
+  cursor: pointer;
   font-weight: 500;
   font-family: 'gara';
-
 }
-
 
 .locale-switcher-select:disabled {
   opacity: 0.5;
@@ -193,74 +166,59 @@
 }
 
 .selectoption {
-background-color: black;
-font-family: 'gara';
-font-weight: 500;
-color: white;
-
+  background-color: black;
+  font-family: 'gara';
+  font-weight: 500;
+  color: white;
 }
 
 .locale-switcher-arrow {
   pointer-events: none;
   position: absolute;
-  right: 0.5rem;
-  /* right-2 */
-  top: 0.5rem;
-  /* top-[8px] */
+  right: 0.5rem; /* right-2 */
+  top: 0.5rem; /* top-[8px] */
 }
 
 /* Styles for ExternalLink component */
 .external-link {
   display: inline-block;
-  border-radius: 0.375rem;
-  /* rounded-md */
-  border: 1px solid #374151;
-  /* border-gray-700 */
-  padding: 2rem;
-  /* p-8 */
+  border-radius: 0.375rem; /* rounded-md */
+  border: 1px solid #374151; /* border-gray-700 */
+  padding: 2rem; /* p-8 */
   transition: border-color 0.3s;
 }
 
 .external-link:hover {
-  border-color: #9ca3af;
-  /* hover:border-gray-400 */
+  border-color: #9ca3af; /* hover:border-gray-400 */
 }
 
 .external-link-title {
-  font-size: 1.25rem;
-  /* text-xl */
-  font-weight: 600;
-  /* font-semibold */
-  color: #ffffff;
-  /* text-white */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: #ffffff; /* text-white */
 }
 
 .external-link-arrow {
-  margin-left: 0.5rem;
-  /* ml-2 */
+  margin-left: 0.5rem; /* ml-2 */
   display: inline-block;
 }
 
 .external-link-description {
-  margin-top: 0.5rem;
-  /* mt-2 */
-  max-width: 250px;
-  /* max-w-[250px] */
-  color: #9ca3af;
-  /* text-gray-400 */
+  margin-top: 0.5rem; /* mt-2 */
+  max-width: 250px; /* max-w-[250px] */
+  color: #9ca3af; /* text-gray-400 */
 }
 
-/* space lnad */
-
+/* Space Land */
 .spaceland {
   display: flex;
-  height: 88vh;
+  min-height: 88vh;
   justify-content: space-evenly;
   align-items: center;
-  
+  flex-wrap: wrap;
 }
-/* space land text */
 
+/* Space Land Text */
 .spacelandtext {
   display: flex;
   flex-direction: column;
@@ -271,32 +229,29 @@ color: white;
 }
 
 .sltt {
-  /* space land text tilte */
   font-size: 62px;
   line-height: 68.2px;
   letter-spacing: -0.1px;
   width: 120%;
-font-weight: 600;
+  font-weight: 600;
   font-family: 'gara';
-  /* padding-left: 10px;
-  padding-right: 10px; */
 }
+
 .sltd {
-  /* space land text details */
   font-size: 15px;
   line-height: 22.5px;
   font-weight: 300;
   font-family: 'lora';
 }
+
 .sltbs {
   display: flex;
   gap: 30px;
   margin-top: 16px;
-  /* padding-left: 20px; */
 }
-.sltb{
-  /* space land text button */
-  background-color:lightslategrey;
+
+.sltb {
+  background-color: lightslategrey;
   border-radius: 7px;
   border: 0;
   padding: 10px;
@@ -306,18 +261,93 @@ font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  ;
-
 }
-.sltbtwo{
-  /* space land text button */
+
+.sltbtwo {
   border-radius: 7px;
   border: 1px solid lightslategrey;
   padding: 10px;
   width: 180px;
   font-family: 'gara';
   font-size: 18px;
+  text-decoration: none;
 }
 
+.sltbtwo a {
+  text-decoration: none;
+  color: #000;
+}
 
+/* Services Section */
+.servicesSection {
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 3%;
+  min-height: 100vh;
+}
 
+.st {
+  color: whitesmoke;
+  font-size: 40px;
+  font-family: 'lora';
+  font-weight: 600;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Services Div */
+.sd {
+  width: 24vw;
+}
+
+/* Services Images */
+.simages {
+  border-radius: 12px;
+}
+
+/* Services Container Images */
+.scimages {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Services Text Div */
+.std {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+  color: #ffffff;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Services Text Title */
+.stt {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  font-family: 'gara';
+  margin: 0px;
+}
+
+/* Services Text Details */
+.stde {
+  margin: 0px;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 300;
+  font-family: 'lora';
+}

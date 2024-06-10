@@ -13,7 +13,7 @@ function SpaceLandText() {
       <motion.div className='sltd' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>{t('details')}</motion.div>
       <motion.div className='sltbs' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>
         <motion.button className='sltb' whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.3 }}>{t('buttonone')}</motion.button>
-        <motion.button className='sltbtwo' whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.3}}>{t('buttontwo')}</motion.button>
+        <motion.button className='sltbtwo'  whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }} transition={{ duration: 0.3}}><a href='#services'>{t('buttontwo')}</a></motion.button>
       </motion.div>
     </motion.div>
   )

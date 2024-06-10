@@ -20,13 +20,12 @@
   "Navigation": {
     "kitchen": "Kitchen",
     "pathnames": "Pathnames",
-    "me":"me",
-    "furniture":"Furniture",
+    "me": "me",
+    "furniture": "Furniture",
     "contact": "Contact Us",
-    "blog":"Blog",
-    "about":"About Us",
-    "logo":"West Furniture"
-    
+    "blog": "Blog",
+    "about": "About Us",
+    "logo": "West Furniture"
   },
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
@@ -50,17 +49,31 @@
     "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>",
     "title": "Pathnames"
   },
-  "SpaceLandText":
-  {
-    "sltt":"title",
-    "sltd":"details",
-    "sltbone":"butone",
-    "sltbtwo":"butontwo"
+  "SpaceLandText": {
+    "sltt": "title",
+    "sltd": "details",
+    "sltbone": "butone",
+    "sltbtwo": "butontwo"
   },
   "kitchen_designs": {
     "title": "Simple, Stylish, and Affordable Kitchens",
     "details": "Transform your home with our stunning kitchens that combine style and affordability. Our elegant designs are tailored to your taste and budget, ensuring your kitchen is both beautiful and functional. Discover the perfect kitchen for your home today !",
     "buttonone": "Contact Us",
-    "buttontwo": "Kitchens"
+    "buttontwo": "Services"
+  },
+  "services": {
+    "services": "Services",
+    "customKitchenOptions": {
+      "title": "Custom Kitchen Options",
+      "details": "Discover a wide range of choices to personalize your kitchen just the way you like it. From different drawer styles to unique cabinet designs, find the perfect match for your kitchen needs."
+    },
+    "tailoredCabinetryCraftsmanship": {
+      "title": "Tailored Cabinetry Craftsmanship",
+      "details": "Upgrade your kitchen with our custom-made cabinets, crafted with care and attention to detail. Whether you need standalone pieces or built-in solutions, our expert craftsmen create cabinets that fit your space perfectly and add a touch of elegance to your kitchen."
+    },
+    "completeKitchenMakeover": {
+      "title": "Complete Kitchen Makeover",
+      "details": "Get the kitchen of your dreams with our full-service design and construction package. From start to finish, we work with you to create a kitchen that suits your lifestyle and exceeds your expectations. Enjoy a seamless blend of style and functionality with our carefully crafted cabinets and high-quality finishes."
+    }
   }
 }
