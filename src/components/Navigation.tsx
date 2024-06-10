@@ -1,28 +1,62 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
 import NavigationLink from './NavigationLink';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.2,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="navigation">
-      <div className='logo'>
-        <text className='logotext'>{t('logo')}</text>
-      </div>
+    <motion.div 
+      className="navigation"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <motion.div className='logo' variants={itemVariants}>
+        <motion.text className='logotext'>{t('logo')}</motion.text>
+      </motion.div>
       <nav>
-        <div className="links" >
-          <NavigationLink href="/">{t('kitchen')}</NavigationLink>
-          <NavigationLink href="/pathnames">{t('furniture')}</NavigationLink>
-          <NavigationLink href="/me">{t('contact')}</NavigationLink>
-          <NavigationLink href="/me">{t('blog')}</NavigationLink>
-          <NavigationLink href="/me">{t('about')}</NavigationLink>
-        </div>
+        <motion.div className="links" variants={containerVariants}>
+          <motion.div variants={itemVariants}>
+            <NavigationLink href="/">{t('kitchen')}</NavigationLink>
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <NavigationLink href="/pathnames">{t('furniture')}</NavigationLink>
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <NavigationLink href="/me">{t('contact')}</NavigationLink>
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <NavigationLink href="/me">{t('blog')}</NavigationLink>
+          </motion.div>
+          <motion.div variants={itemVariants}>
+            <NavigationLink href="/me">{t('about')}</NavigationLink>
+          </motion.div>
+        </motion.div>
       </nav>
-      <div className='lang'>
+      <motion.div className='lang' variants={itemVariants}>
         <LocaleSwitcher />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
