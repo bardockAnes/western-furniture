@@ -16,8 +16,8 @@ export default function IndexPage({ params: { locale } }: Props) {
 
   return (
     <>
-      <SpaceLand />
-      <Services />
+      <SpaceLand locale={locale} />
+      <Services locale={locale}/>
     </>
   );
 }

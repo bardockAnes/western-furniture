@@ -22,13 +22,27 @@
   font-family: mont;
   src: url('../../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: amiri;
+  src: url('../../public/fonts/Amiri,Lalezar,Scheherazade_New,Tajawal/Amiri/Amiri-Regular.ttf');
+}
+@font-face {
+  font-family: leza;
+  src: url('../../public/fonts/Amiri,Lalezar,Scheherazade_New,Tajawal/Lalezar/Lalezar-Regular.ttf');
+}
+@font-face {
+  font-family: newsh;
+  src: url('../../public/fonts/Amiri,Lalezar,Scheherazade_New,Tajawal/Scheherazade_New/ScheherazadeNew-Regular.ttf');
+}
+@font-face {
+  font-family: tjwal;
+  src: url('../../public/fonts/Amiri,Lalezar,Scheherazade_New,Tajawal/Tajawal/Tajawal-Regular.ttf');
+}
 
 
 body {
-    background-color: white;
-    margin: 0px;
-    height: 100vh;
-    background: linear-gradient(to left, white, rgba(179, 197, 245, 0.15));
+margin: 0;
+  
 }
 
 /* Space land image */

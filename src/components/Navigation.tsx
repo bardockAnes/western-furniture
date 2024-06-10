@@ -5,7 +5,7 @@ import NavigationLink from './NavigationLink';
 import { motion } from 'framer-motion';
 import './styles.css';
 
-export default function Navigation() {
+export default function Navigation({locale}:any) {
   const t = useTranslations('Navigation');
 
   const containerVariants = {
@@ -25,15 +25,18 @@ export default function Navigation() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const newsh = locale === 'ar' ? 'newsh' : '';
+
   return (
     <motion.div 
       className="navigation"
+      style={{fontFamily:newsh}}
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
       <motion.div className='logo' variants={itemVariants}>
-        <motion.text className='logotext'>{t('logo')}</motion.text>
+        <motion.text className='logotext' style={{fontFamily:newsh}}>{t('logo')}</motion.text>
       </motion.div>
       <nav>
         <motion.div className="links" variants={containerVariants}>

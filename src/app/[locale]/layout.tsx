@@ -31,6 +31,8 @@ export async function generateMetadata({
   };
 }
 
+
+
 export default async function LocaleLayout({
   children,
   params: {locale}
@@ -43,13 +45,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
-
+  const bd = locale === 'ar' ? 'right' : 'left';
+  // background: ;
 
   return (
     <html lang={locale} dir={dir}>
-      <body>
+      <body style={{background:`linear-gradient(to ${bd}, white, rgba(179, 197, 245, 0.15))`}}>
         <NextIntlClientProvider messages={messages}>
-          <Navigation/>
+          <Navigation locale={locale}/>
+
 
           {children}
 

@@ -5,10 +5,10 @@ import './styles.css'
 import SpaceLandText from './SpaceLand/SpaceLandText'
 import SpaceLandImage from './SpaceLand/SpaceLandImage'
 
-function SpaceLand() {
+function SpaceLand({locale}:any) {
   return (
     <section className='spaceland'>
-      <SpaceLandText />
+      <SpaceLandText locale={locale} />
       <SpaceLandImage />
     </section>
   )

@@ -6,7 +6,7 @@ import MYimage from '../../public/3.jpeg';
 import { useTranslations } from 'next-intl';
 import { useInView } from 'react-intersection-observer';
 
-function Services() {
+function Services({locale} : any) {
     const t = useTranslations('services');
 
     const containerVariants = {
@@ -39,6 +39,10 @@ function Services() {
 
     const [ref, inView] = useInView({ threshold: 0.3, triggerOnce: true });
 
+    const newsh = locale === 'ar' ? 'newsh' : '';
+    const ats = locale === 'ar' ? '50px' : '';
+    const ads = locale === 'ar' ? '7px' : '';
+
     return (
         <section ref={ref} className='servicesSection'>
             <motion.p
@@ -61,8 +65,8 @@ function Services() {
                         <Image className='simages' src={MYimage} alt={'anes'} layout='fill' objectFit='cover' />
                     </motion.div>
                     <motion.div className='std'>
-                        <motion.p className='stt'>{t('customKitchenOptions.title')}</motion.p>
-                        <motion.p className='stde'>{t('customKitchenOptions.details')}</motion.p>
+                        <motion.p className='stt' style={{ fontFamily: newsh,lineHeight:ats}}>{t('customKitchenOptions.title')}</motion.p>
+                        <motion.p className='stde' style={{ fontFamily: newsh}}>{t('customKitchenOptions.details')}</motion.p>
                     </motion.div>
                 </motion.div>
                 <motion.div className='sd' variants={itemVariants}>
@@ -70,8 +74,8 @@ function Services() {
                         <Image className='simages' src={MYimage} alt={'anes'} layout='fill' objectFit='cover' />
                     </motion.div>
                     <motion.div className='std'>
-                        <motion.p className='stt'>{t('tailoredCabinetryCraftsmanship.title')}</motion.p>
-                        <motion.p className='stde'>{t('tailoredCabinetryCraftsmanship.details')}</motion.p>
+                        <motion.p className='stt' style={{ fontFamily: newsh,lineHeight:ats}}>{t('tailoredCabinetryCraftsmanship.title')}</motion.p>
+                        <motion.p className='stde' style={{ fontFamily: newsh}}>{t('tailoredCabinetryCraftsmanship.details')}</motion.p>
                     </motion.div>
                 </motion.div>
                 <motion.div className='sd' variants={itemVariants}>
@@ -79,8 +83,8 @@ function Services() {
                         <Image className='simages' src={MYimage} alt={'anes'} layout='fill' objectFit='cover' />
                     </motion.div>
                     <motion.div className='std'>
-                        <motion.p className='stt'>{t('completeKitchenMakeover.title')}</motion.p>
-                        <motion.p className='stde'>{t('completeKitchenMakeover.details')}</motion.p>
+                        <motion.p className='stt' style={{ fontFamily: newsh,lineHeight:ats}}>{t('completeKitchenMakeover.title')}</motion.p>
+                        <motion.p className='stde' style={{ fontFamily: newsh}}>{t('completeKitchenMakeover.details')}</motion.p>
                     </motion.div>
                 </motion.div>
             </motion.div>
