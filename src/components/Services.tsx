@@ -2,7 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import MYimage from '../../public/3.jpeg';
+import MYimage from '../../public/AllKitchen2.jpeg';
+import MYimage2 from '../../public/onlycapent.jpeg';
+import MYimage3 from '../../public/optionskitchen2.jpeg';
 import { useTranslations } from 'next-intl';
 import { useInView } from 'react-intersection-observer';
 
@@ -62,7 +64,7 @@ function Services({locale} : any) {
             >
                 <motion.div className='sd' variants={itemVariants}>
                     <motion.div className='scimages' whileHover={{ scale: 1.1 }}>
-                        <Image className='simages' src={MYimage} alt={'anes'} layout='fill' objectFit='cover' />
+                        <Image className='simages' src={MYimage3} alt={'anes'} layout='fill' objectFit='cover' />
                     </motion.div>
                     <motion.div className='std'>
                         <motion.p className='stt' style={{ fontFamily: newsh,lineHeight:ats}}>{t('customKitchenOptions.title')}</motion.p>
@@ -70,8 +72,8 @@ function Services({locale} : any) {
                     </motion.div>
                 </motion.div>
                 <motion.div className='sd' variants={itemVariants}>
-                    <motion.div className='scimages' whileHover={{ scale: 1.1 }}>
-                        <Image className='simages' src={MYimage} alt={'anes'} layout='fill' objectFit='cover' />
+                    <motion.div className='scimages'  whileHover={{ scale: 1.1 }}>
+                        <Image className='simages'  src={MYimage2} alt={'anes'} layout='fill' objectFit='cover' />
                     </motion.div>
                     <motion.div className='std'>
                         <motion.p className='stt' style={{ fontFamily: newsh,lineHeight:ats}}>{t('tailoredCabinetryCraftsmanship.title')}</motion.p>
