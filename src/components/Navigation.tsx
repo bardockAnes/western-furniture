@@ -44,16 +44,16 @@ export default function Navigation({locale}:any) {
             <NavigationLink href="/">{t('kitchen')}</NavigationLink>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <NavigationLink href="/pathnames">{t('furniture')}</NavigationLink>
+            <NavigationLink href="/">{t('furniture')}</NavigationLink>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <NavigationLink href="/me">{t('contact')}</NavigationLink>
+            <NavigationLink href="/">{t('contact')}</NavigationLink>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <NavigationLink href="/me">{t('blog')}</NavigationLink>
+            <NavigationLink href="/">{t('blog')}</NavigationLink>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <NavigationLink href="/me">{t('about')}</NavigationLink>
+            <NavigationLink href="/">{t('about')}</NavigationLink>
           </motion.div>
         </motion.div>
       </nav>
