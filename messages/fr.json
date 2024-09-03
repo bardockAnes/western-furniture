@@ -5,10 +5,10 @@
   },
   "IndexPage": {
     "description": "Ceci est un exemple basique qui démontre l'utilisation de <code>next-intl</code> avec le routeur d'application Next.js. Essayez de changer la langue en haut à droite et voyez comment le contenu change.",
-    "title": "exemple next-intl"
+    "title": "Ouest Desings"
   },
   "LocaleLayout": {
-    "title": "exemple next-intl"
+    "title": "Ouest Desings"
   },
   "LocaleSwitcher": {
     "label": "Changer de langue",
