@@ -5,10 +5,10 @@
   },
   "IndexPage": {
     "description": "هذا مثال أساسي يوضح استخدام <code>next-intl</code> مع موجه تطبيقات Next.js. حاول تغيير اللغة في الزاوية اليمنى العليا وشاهد كيف يتغير المحتوى.",
-    "title": "مثال next-intl"
+    "title": "تصاميم الغرب"
   },
   "LocaleLayout": {
-    "title": "مثال next-intl"
+    "title": "تصاميم الغرب"
   },
   "LocaleSwitcher": {
     "label": "تغيير اللغة",
